@@ -65,7 +65,7 @@ footer a { color: #404040; }
   * Instances de builder dédiées
   * Construction simultanée sur plusieurs nœuds
   * Source de cache externe pour votre build
-  * Construire d'images multi-plateformes
+  * Construire des images multi-plateforme
   * :rocket: Commande de haut niveau avec **`bake`**
 
 <!-- Buildx est un plugin de la CLI de Docker disponible depuis Docker 19.03 et
@@ -198,7 +198,7 @@ footer a { color: #404040; }
 
 ## Récap multi-platforme
 
-* Nous avons vu comment construire une image multi-paltforme
+* Nous avons vu comment construire une image multi-platforme
 * Optimiser notre Dockerfile grâce au multi-stage
 * Pousser notre image sur Docker Hub
 
@@ -319,16 +319,16 @@ Aliases:
   bake, f
 
 Options:
-      --builder string                      Override the configured builder instance
-  -f, --file stringArray                    Build definition file
-      --load --set=*.output=type=docker     Shorthand for --set=*.output=type=docker
-      --metadata-file string                Write build result metadata to the file
-      --no-cache                            Do not use cache when building the image
-      --print                               Print the options without building
-      --progress auto                       Set type of progress output (auto, plain, tty). Use plain to show container output (default "auto")
-      --pull                                Always attempt to pull a newer version of the image
-      --push                                Shorthand for --set=*.output=type=registry
-      --set targetpattern.key=value         Override target value (e.g., targetpattern.key=value)
+      --builder string           Override the configured builder instance
+  -f, --file stringArray         Build definition file
+      --load                     Shorthand for --set=*.output=type=docker
+      --metadata-file string     Write build result metadata to the file
+      --no-cache                 Do not use cache when building the image
+      --print                    Print the options without building
+      --progress                 Set type of progress output (auto, plain, tty). Use plain to show container output (default "auto")
+      --pull                     Always attempt to pull a newer version of the image
+      --push                     Shorthand for --set=*.output=type=registry
+      --set stringArray          Override target value (e.g., targetpattern.key=value)
 ```
 
 <!-- Voici à quoi ressemble la commande buildx bake -->
@@ -494,6 +494,6 @@ footer a { color: #404040; }
 # Thanks for your time!
 
 * :newspaper: Slides et démo dispo [sur GitHub](https://github.com/crazy-max/lorrainejug-buildx-bake)
-* :test_tube: Bake est encore expérimental donc n'hésitez pas à donner [votre feedback](https://github.com/docker/buildx/issues) si vous l'utilisez!
-* :rocket: Une GitHub Action is déjà disponible: https://github.com/docker/bake-action
+* :test_tube: Bake est encore expérimental donc n'hésitez pas à donner [votre feedback](https://github.com/docker/buildx/issues)!
+* :rocket: Une GitHub Action est déjà disponible: https://github.com/docker/bake-action
 * :whale: Jetez à oeil au [projet Diun](https://github.com/crazy-max/diun) qui utilise bake
